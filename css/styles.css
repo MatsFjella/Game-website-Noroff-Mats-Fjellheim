@@ -1,0 +1,68 @@
+/* Header element for navigation */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/*Section element */
+.headercontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+}
+/*div element with game hub logo inside */
+.logodiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* List navigation settings */
+.headerlist {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins;
+    color: white;
+}
+/* Hover navigations styling */
+.headerlist a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Poppins;
+    
+}
+
+.headerlist li {
+    text-decoration: none;
+    margin: 0px 10px;
+}
+/* Size of logo */
+.headerlogo {
+    width: 150px;
+    height: auto;
+}
+/* Nav element settings, using it to stick navigation to the right side of section */
+.nav {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+/* Controlling background settings for the body of the entire site */
+
+body {
+    background-image: url("/path/to/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
