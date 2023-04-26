@@ -1,0 +1,138 @@
+.cart-section {
+    margin-top: 10vh;
+    width: 60vw;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .line {
+    width: 60vw;
+    height: 2px;
+    background-color: #FF5454;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cart-title {
+    font-size: 50px;
+    font-family: Poppins;
+    font-weight: 900;
+    color: #1B203D;
+    padding-left: 2%;
+  }
+
+  .cart-text {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 300;
+    color: #1B203D;
+    padding-left: 2%;
+  }
+
+  .cart-container {
+    border-top: solid 2px;
+    border-color: #FF5454;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 60vw;
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 20px;
+    height: auto !important;
+  }
+  
+  .cart-item {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .cart-titles {
+    font-size: 22px;
+    font-family: Poppins;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    color: #1B203D;
+  }
+
+  .cart-description-text {
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    color: #1B203D;
+  }
+
+  .cart-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px;
+    width: 60vw;
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 20px;
+    height: auto !important;
+  }
+
+  .giftcard_button {
+    background-color: #1B203D;
+    font-family: Poppins;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 65px 15px 65px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .shoppingcart_button {
+    background-color: #FF5454;
+    font-family: Poppins;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 65px 15px 65px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 20vw;
+    
+  }
+
+  @media (max-width: 768px) {
+    .cart-section {
+      width: 90vw;
+    }
+  
+    .line {
+      width: 90vw;
+    }
+  
+    .cart-container {
+      width: 90vw;
+      max-width: 90vw;
+      
+      display:block;
+    }
+  
+    .cart-buttons {
+      width: 90vw;
+      max-width: 90vw;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  
+    .shoppingcart_button {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }

@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5vh;
+  }
+  
+  .filter {
+    width: 25%;
+    padding-right: 1rem;
+    border-right: solid 2px;
+    border-color: #1B203D;
+
+  }
+
+  @media screen and (max-width: 767px) {
+    .filter {
+      display:none;
+    }
+  }
+
+  .search-box {
+    display: flex;
+    background-color: #f0f0f0;
+    border-radius: 0;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    border: solid 2px;
+    border-color: #1B203D;
+
+  }
+  
+  .search-placeholder {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  
+  
+  .search-button:hover {
+    background-color: #28355b;
+  }
+  
+  
+  .filter-heading {
+    font-size: 50px;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+
+  .filter-price {
+    font-size: 26px;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+
+  .filter-option {
+    font-size: 26px;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+
+  .filter-category {
+    font-size: 26px;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+  
+  .filter-option {
+    margin-bottom: 1rem;
+  }
+  
+  .filter-option h3 {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+  }
+
+  .circle-text {
+    position: relative;
+    padding-left: 25px; 
+    font-size: 18px;
+    font-family: Poppins;
+  }
+  
+  .circle-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%;
+    background-color: #000; 
+    
+
+  }
+
+  .circle-text-inactive {
+    font-size: 18px;
+    font-family: Poppins;
+    position: relative;
+    padding-left: 25px; 
+  }
+  
+  .circle-text-inactive::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%;
+    background-color: gray; 
+  }
+  
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    width: 70%;
+  }
+  
+
+
+ /* Section to the big title text */
+.gamestitle-section {
+    display:none;   
+  }
+  /* Big titles css */
+  .games-title {
+    font-size: 50px;
+    font-family: Poppins;
+    font-weight: 900;
+    color: #1B203D;
+    padding-left: 2%;
+  }
+
+  @media screen and (max-width: 767px) {
+  .gamestitle-section {
+    display:block; 
+    padding-top: 5vh;
+    padding-bottom: 0;
+    width: 90vw;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;    
+      }
+  }
+  

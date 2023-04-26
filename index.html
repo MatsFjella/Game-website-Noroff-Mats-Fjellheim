@@ -1,6 +1,8 @@
 <DOCTYPE html>
 <link href="css/styles.css" rel="stylesheet">
 <link href="css/header.css" rel="stylesheet">
+<link href="css/games.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
 
 
@@ -16,13 +18,13 @@
 <header class="header">
     <section class="headercontainer">
             <div class="logodiv">
-                <img src="images/GameHub_Logo.png" alt="Game hubs logo" class="headerlogo">
+              <a href="index.html"><img src="images/GameHub_Logo.png" alt="Game hubs logo" class="headerlogo"></a>
             </div>
-        
+       
         <nav class="nav">
                  <ul class="headerlist">
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#">Games</a></li>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="games.html">Games</a></li>
                      <li><a href="#">About</a></li>
                      <li><a href="#">Contact</a></li>
                      <li><a href="#">My profile</a></li>
@@ -36,6 +38,8 @@
         </nav>
     </section>
 </header>
+
+    <!-- Hero section -->
     <section class="hero">
         <div class="hero_image">
           <img src="https://matsfjellheim.netlify.app/images/GameHub_covers3.jpg" alt="Hero image" class="hero_image">
@@ -45,26 +49,187 @@
           <h1 class="hero_heading">Black</h1>
           <p class="price-hero">499,-</p>
           <h2 class="hero_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
-          <button class="hero_button">Purchase</button>
+          <a href="single-product.html"><button class="hero_button">Purchase</button></a>
         </div>
         </div>
       </section>
 
 
+      <!-- Section with categories-->
       <section class ="category-grid">
-        <div class ="category1"><p class="grid-text">RPG</p></div>
-        <div class ="category2"><p class="grid-text">FPS</p></div>
-        <div class ="category3"><p class="grid-text">RTS</p></div>
-        <div class ="category4"><p class="grid-text">MMO</p></div>
+        <div class ="category1"><p class="category-grid-text">RPG</p></div>
+        <div class ="category2"><p class="category-grid-text">FPS</p></div>
+        <div class ="category3"><p class="category-grid-text">RTS</p></div>
+        <div class ="category4"><p class="category-grid-text">MMO</p></div>
       </section>
     
-      <h1 class="featuredtitle">Featured games</h1>
-      <section class="featuredgames">
-        <div class="game1"><img src= images/GameHub_covers.jpg class="featuredimagepicture"><p class="featuredimageheading">Ping pong</p></div>
-        <div class="game2"><img src= images/GameHub_covers2.jpg class="featuredimagepicture"><p class="featuredimageheading">Ping pong</p></div>
-        <div class="game3"><img src= images/GameHub_covers3.jpg class="featuredimagepicture"><p class="featuredimageheading">Ping pong</p></div>
-        <div class="game4"><img src= images/GameHub_covers4.jpg class="featuredimagepicture"><p class="featuredimageheading">Ping pong</p></div>
-      </section> 
+      <section class="bigtitlesection">
+        <h1 class="featuredtitle">Featured games</h1>
+        </section>
+
+
+        <!-- Section with featured images-->
+        <section class="featured-section">
+          <div class="featured-container">
+            <a href="single-product.html">
+            <div class="featured-item">
+              <img src="images/GameHub_covers.jpg" class="featured-image" alt="Image of the Playbox game Furious">
+              <div class="featured-text-container">
+                <div class="featured-heading-wrapper">
+                  <h2 class="featured-heading">Ping Pong</h2>
+                  <p class="featured-text">Sports</p>
+                </div>
+                <p class="featured-price">499,99</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="single-product.html">
+            <div class="featured-item">
+              <img src="images/GameHub_covers2.jpg" class="featured-image" alt="Image of the Playbox game Super Duper">
+              <div class="featured-text-container">
+                <div class="featured-heading-wrapper">
+                  <h2 class="featured-heading">Super duper</h2>
+                  <p class="featured-text">Sports</p>
+                </div>
+                <p class="featured-price">499,99</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="single-product.html">
+            <div class="featured-item">
+              <img src="images/GameHub_covers3.jpg" class="featured-image" alt="Image of the Playbox game Ping Pong">
+              <div class="featured-text-container">
+                <div class="featured-heading-wrapper">
+                  <h2 class="featured-heading">Black</h2>
+                  <p class="featured-text">RPG</p>
+                </div>
+                <p class="featured-price">499,99</p>
+              </div>
+            </div>
+            </a>
+
+            <a href="single-product.html">
+            <div class="featured-item">
+              <img src="images/GameHub_covers4.jpg" class="featured-image" alt="Image of the Playbox game Assassin">
+              <div class="featured-text-container">
+                <div class="featured-heading-wrapper">
+                  <h2 class="featured-heading">Furious</h2>
+                  <p class="featured-text">RPG</p>
+                </div>
+                <p class="featured-price">499,99</p>
+              </div>
+            </div>
+            </a>
+
+          
+          </div>
+        </section>
+
+
+      <!-- Section for call to action -->
+    <section class="cta">
+      <div class="cta_image">
+        <img src="images/retro.jpg" alt="Hero image" class="cta_image">
+      </div>
+      <div class="cta_wrapper">
+      <div class="cta_content">
+        <h1 class="cta_heading">Retro Games</h1>
+        <h2 class="cta_title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+        <button class="cta_button">Read more</button>
+      </div>
+      </div>
+    </section>
+
+    <section class="bigtitlesection">
+      <h2 class="featuredtitle">Most popular</h1>
+      </section>
+
+
+      <!-- Section with featured images-->
+      <section class="popular-section">
+        <div class="popular-container">
+
+          <a href="single-product.html">
+          <div class="popular-item">
+            <img src="images/GameHub_covers.jpg" class="popular-image" alt="Image of the Playbox game Furious">
+            <div class="popular-text-container">
+              <div class="popular-heading-wrapper">
+                <h2 class="popular-heading">Ping Pong</h2>
+                <p class="popular-text">Sports</p>
+              </div>
+              <p class="popular-price">499,99</p>
+            </div>
+          </div>
+          </a>
+
+          <a href="single-product.html">
+          <div class="featured-item">
+            <img src="images/GameHub_covers2.jpg" class="popular-image" alt="Image of the Playbox game Super Duper">
+            <div class="featured-text-container">
+              <div class="featured-heading-wrapper">
+                <h2 class="featured-heading">Super duper</h2>
+                <p class="featured-text">Sports</p>
+              </div>
+              <p class="featured-price">499,99</p>
+            </div>
+          </div>
+          </a>
+
+          <a href="single-product.html">
+          <div class="featured-item">
+            <img src="images/GameHub_covers3.jpg" class="popular-image" alt="Image of the Playbox game Ping Pong">
+            <div class="featured-text-container">
+              <div class="featured-heading-wrapper">
+                <h2 class="featured-heading">Black</h2>
+                <p class="featured-text">RPG</p>
+              </div>
+              <p class="featured-price">499,99</p>
+            </div>
+          </div>
+          </a>
+
+          <a href="single-product.html">
+          <div class="featured-item">
+            <img src="images/GameHub_covers4.jpg" class="popular-image" alt="Image of the Playbox game Assassin">
+            <div class="featured-text-container">
+              <div class="featured-heading-wrapper">
+                <h2 class="featured-heading">Furious</h2>
+                <p class="featured-text">RPG</p>
+              </div>
+              <p class="featured-price">499,99</p>
+            </div>
+          </div>
+          </a>
+
+         
+        </div>
+      </section>
+        
+      
+      <footer>
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="images/GameHub_Logo.png" alt="Logo" />
+          </div>
+          <div class="footer-navigation">
+            <h4 class="footer-title">Navigation</h4>
+            <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+              <li><a href="#">Link 4</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4 class="footer-title">Social Media</h4>
+            <img src="images/Icons/social.PNG" alt="Social Icons" />
+          </div>
+        </div>
+      </footer>
+      
+      
     
 </body>
 
