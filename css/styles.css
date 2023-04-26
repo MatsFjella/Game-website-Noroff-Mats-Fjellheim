@@ -20,8 +20,6 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
-
-    
 }
 
 @media screen and (min-width: 768px) {
@@ -43,9 +41,10 @@ body {
   height: 80vh;
   object-fit: cover;
   object-position: center;
-  rotate: -4deg;
+  rotate: -8deg;
   z-index: -1;
   position: relative;
+  border-radius: 25px;
 }
 
 .hero_content {
@@ -177,39 +176,18 @@ body {
 
 
 @media screen and (max-width: 767px) {
+
   .category-grid {
-  padding-top: 0;
-  width: 90vw;
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
   
   .category1, .category2, .category3, .category4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #1B203D;
-  height: 12vh;
-  width: 20vw;
-  margin: 0 20px 0 20px;
-  border-radius: 25px;
+    width: auto;
+    margin: 0;
   }
-  
-  .game1, .game3 {
-  order: 1;
-  width: 40vw;
-  }
-  
-  .game2, .game4 {
-  order:2;
-  width: 40vw;
-  }
+
   
   .grid-text {
   font-family: Poppins;
@@ -220,91 +198,231 @@ body {
   }
 }
 
-
-.featuredgames {
-  padding-top: 12vh;
+/* Section to the big title text */
+.bigtitlesection {
+  padding-top: 5vh;
+  padding-bottom: 0;
   width: 90vw;
   max-width: 100%;
   height: auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;     
 }
+/* Big titles css */
+.featuredtitle {
+  font-size: 50px;
+  font-family: Poppins;
+  font-weight: 900;
+  color: #1B203D;
+  padding-left: 2%;
+}
 
+/* The actual games in the grid */
 .game1, .game2, .game3, .game4 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   height: 12vh;
   width: 20vw;
   margin: 0 20px 0 20px;
   }
 
-  .featuredimagepicture {
-    width: 40%;
+
+  .featured-section {
+    width: 100%;
+    padding: 2rem 0;
+  }
+  
+  .featured-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .featured-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  .featuredimageheading {
-    font-size: 26px;
+  .featured-image {
+    width: 100%;
+  }
+  
+  .featured-text-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .featured-heading-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .featured-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: Poppins;
+    color: #1B203D;
+  }
+  
+  .featured-text {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 300;
+    color: #1B203D;
+  }
+  
+  .featured-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
     font-family: Poppins;
     font-weight: 600;
-    color: #1B203D;
-    text-align: left;
+    margin-top: -30px;
   }
+  
+  @media screen and (max-width: 767px) {
+    .featured-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
 
-  .featuredtitle {
-    font-size: 50px;
+
+  /* CTA */
+
+  .cta {
+    background-image: url(images/GameHub_covers3.jpg);
+    width: 90% !important;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+  }
+  
+ 
+  
+  
+  
+  .cta_image img {
+    width: 60vw;
+    height: 80vh;
+    object-fit: cover;
+    object-position: center;
+    rotate: -8deg;
+    z-index: -1;
+    position: relative;
+    border-radius: 25px;
+  }
+  
+  .cta_content {
+    background-color: #1B203D;
+    flex: 1;
+    margin-left: 50px;
+    padding: 75px 50px 75px 50px;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 3px;
+  }
+  
+  .cta_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 50vw;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    transform: translateY(-65%);
+    padding: 20px;
+    color: #fff;
+      
+    }
+  
+   @media screen and (max-width: 767px) {
+    .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: "images/GameHub_covers3.jpg";
+    position: relative;
+    top: 100px;
+    right: 0;
+    height: auto;
+    width: 60%;
+    rotate: 4deg;
+    }
+    
+    .cta_content {
+    margin: 50px 0;
+    padding: 50px;
+    }
+    
+    .cta_image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    transform: none;
+    z-index: -1;
+    position: relative;
+    rotate: 0deg;
+      }
+    
+    .cta_wrapper {
+    width: 100%;
+    left: 0;
+    top: unset;
+    transform: none;
+    position: relative;
+    rotate: 0deg;
+    }
+    }
+    
+  
+  .cta_heading {
+    font-size: 36px;
     font-family: Poppins;
-    font-weight: 600;
-    color: #1B203D;
-    padding-left: 13%;
-  }
-
-@media screen and (max-width: 767px) {
-  .featuredgames {
-  padding-top: 0;
-  width: 90vw;
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  flex-direction: column;
- }
-  
-  .game1, .game2, .game3, .game4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 12vh;
-  width: 20vw;
-  margin: 0 20px 0 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
   
-  .game1, .game3 {
-  order: 1;
-  width: 50%;
+  .cta_title {
+    font-size: 24px;
+    font-family: Poppins;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: normal;
   }
   
-  .game2, .game4 {
-  order:2;
-  width: 50%;
+  .cta_button {
+    background-color: white;
+    font-family: Poppins;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 65px 15px 65px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
   }
   
-.grid-text {
-  font-family: Poppins;
-  font-size: 24px;
-  font-weight: 600;
-  color: #fff;
-  align-items:center;
-}
-
-  
-  
-}
-
-
+  .cta-price {
+    font-size: 24px;
+    color: red;
+    font-family: Poppins;
+    font-weight: bold;
+  }
