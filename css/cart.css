@@ -108,6 +108,10 @@
     
   }
 
+  .cartimage {
+    width: 200px !important;
+  }
+
   @media (max-width: 768px) {
     .cart-section {
       width: 90vw;
@@ -136,7 +140,7 @@
       margin-top: 20px;
     }
 
-    .cart-image {
-      width: 200px;
+    .cartimage {
+      width: 200px !important;
     }
   }
