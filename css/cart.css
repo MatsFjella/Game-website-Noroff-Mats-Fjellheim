@@ -135,4 +135,8 @@
       margin-left: 0;
       margin-top: 20px;
     }
+
+    .cart-image {
+      width: 200px;
+    }
   }
