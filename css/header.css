@@ -53,6 +53,10 @@
     width: 150px;
     height: auto;
 }
+
+.headericon {
+  width: 30px;
+}
 /* Nav element settings, using it to stick navigation to the right side of section */
 .nav {
     display:flex;
